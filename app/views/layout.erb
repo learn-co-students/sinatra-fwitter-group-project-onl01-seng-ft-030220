@@ -4,7 +4,9 @@
     <title>Fwitter</title>
   </head>
   <body>
-
+    <header>
+     <%= '<a href="logout">Log Out</a>' if is_logged_in? %>
+    </header>
     <div class="container">
       <%= yield %>
     </div>
