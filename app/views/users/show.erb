@@ -1,0 +1,10 @@
+<h1><%= @user.username %>'s Tweets</h1>
+
+<ul>
+<% @user.tweets.each do |tweet| %>
+  <li>
+    <p><%= tweet.content %></p>
+    <a href="tweets/<%= tweet.id %>">View Tweet</a>
+  </li>
+<% end %>
+</ul>
